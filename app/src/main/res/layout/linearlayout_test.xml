@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+layout_width 宽度
+layout_height 高度
+match_parent 父容器
+layout_margin 距离外边距
+padding 内边距
+orientation  vertical 垂直的， horizontal 水平的  默认是水平，哪怕这你的是水平也建议写上
+layout_weight: 权重，这里是指内部控件的权重，先让有权重的来分配。
+
+在实际的开发中，如果使用了线性布局，horizontal 不设置 layout_width，vertical 不设置layout_height
+通过权重来设置各个的显示的比例大小
+
+
+wrap_content 内容包裹
+dp是尺寸单位
+sp是用在字体上的
+
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="horizontal"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:background="#ff0000"
+        android:text="线性布局线性布局线性布局线性布局线性布局" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="#00ff00"
+        android:text="线性布局" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#0000ff"
+        android:text="线性布局" />
+</LinearLayout>

@@ -7,6 +7,7 @@ import android.graphics.LinearGradient;
 import android.os.Bundle;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import com.idig8.myapplication.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_main);
-        linearLayoutShow();
+//        linearLayoutShow();
+        setContentView(R.layout.chatting_linearlayout);
     }
 
     /**

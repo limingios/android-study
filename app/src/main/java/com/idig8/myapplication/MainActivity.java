@@ -7,7 +7,6 @@ import android.graphics.LinearGradient;
 import android.os.Bundle;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import com.idig8.myapplication.R;
 
 public class MainActivity extends AppCompatActivity {
 

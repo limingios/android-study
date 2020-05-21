@@ -2,57 +2,75 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign Up"
-        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
         ></TextView>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="hello hello hello"
-        android:layout_gravity="center_horizontal"
+        android:text="hello hello hellohello hello hello \nhello hello hellohello hello hello"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_margin="20dp"
+        android:gravity="center_vertical"
         ></TextView>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add Phone"
-        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center_vertical"
         ></TextView>
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Name and Suname"
-        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
         ></EditText>
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Email Address"
-        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
         ></EditText>
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Phone"
-        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
         ></EditText>
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Password"
-        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
         ></EditText>
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Register"
-        android:layout_gravity="center_horizontal"
+        android:text=""
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/ic_house"
         ></Button>
 
 </LinearLayout>

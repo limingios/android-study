@@ -17,7 +17,8 @@ public class MainActivity extends AppCompatActivity {
 //        setContentView(R.layout.activity_main);
 //        linearLayoutShow();
         //文件存在 R找不到也可能是缓存的问题，AS点file->invalidate Caches
-        setContentView(R.layout.chatting_linearlayout);
+//        setContentView(R.layout.chatting_linearlayout);
+        setContentView(R.layout.login_linearlayout);
     }
 
     /**

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TextActivity"
+    android:orientation="vertical">
+    <!--
+     android:text="@string/long_txt" 通过从res values String中的引入
+     android:textSize="20sp" 设置字体大小
+     android:textColor="#00ffff" 设置字体的颜色
+     android:lineSpacingMultiplier="2"  调整倍距
+     android:lineSpacingExtra="20sp" 设置文字的行间距的
+     android:lines="1" 显示几行
+     android:singleLine="true" 单行后面有点点点省略
+     android:ellipsize="middle"   前中后，跑马灯的方式来进行省略点点跟singleLine配合使用。
+     android:focusable="true"  设置是否可以获取焦点
+     android:focusableInTouchMode="true"   触摸时可以获取焦点
+     android:marqueeRepeatLimit="marquee_forever" 设置跑马灯频次
+     手机看小说的时候，一页看不下可以往下翻，所以可以通过ScrollView 来完成滚动，
+     但是ScrollView 内部职能放一个控件，【如果需要放入多个个可以通过布局进行包裹】。
+    -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/long_txt"
+        android:textSize="20sp"
+        android:singleLine="true"
+        android:textColor="#00ffff"
+        android:lineSpacingExtra="15sp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        >
+
+    </TextView>
+</ScrollView>

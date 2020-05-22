@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ImageViewActivity"></activity>
+        <activity android:name=".ProgressBarActivity"></activity>
+        <activity android:name=".ButtonActivity" />
+        <activity android:name=".ImageViewActivity" />
         <activity android:name=".EditTextActivity" />
         <activity android:name=".TextActivity" />
-        <activity android:name=".ButtonActivity">
+        <activity android:name=".UILoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

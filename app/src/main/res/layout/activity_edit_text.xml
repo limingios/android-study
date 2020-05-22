@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello hello hello hello hello hello \nhello hello hellohello hello hello"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_margin="20dp"
+        android:gravity="center_vertical"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Phone"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center_vertical"
+        ></TextView>
+    <!--
+     android:text 设置文本内容
+     android:textColor 设置文本颜色
+     android:hint  内容为空的时候显示文本
+     android:textColorHint 为空的时候显示的文本颜色
+     android:inputType   number 整数类型 很多，看API吧一般想到的都有
+     android:maxLength 最大文字长度
+     android:gravity   位置
+     android:digits    允许输入哪些字符
+
+    -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:textColorHint="#cccccc"
+        android:gravity="center"
+        android:hint="Name and Suname"
+        ></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress"
+        android:gravity="center"
+        android:textColorHint="#cccccc"
+        android:hint="Name and Suname"
+        ></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textColorHint="#cccccc"
+        android:inputType="number"
+        ></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="Password"
+        android:textColorHint="#cccccc"
+        android:inputType="textPassword"
+        android:maxLength="12"
+        ></EditText>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/ic_house"
+        ></Button>
+
+</LinearLayout>

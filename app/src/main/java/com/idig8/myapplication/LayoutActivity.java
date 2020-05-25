@@ -31,4 +31,10 @@ public class LayoutActivity extends AppCompatActivity {
         startActivity(intent);
         LayoutActivity.this.finish();
     }
+
+    public void toButtonActivity(View v){
+        Intent intent = new Intent(LayoutActivity.this,CheckButtonActivity.class);
+        startActivity(intent);
+        LayoutActivity.this.finish();
+    }
 }

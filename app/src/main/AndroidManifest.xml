@@ -9,11 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EditTextActivity"></activity>
+        <activity android:name=".FrameActivity"></activity>
+        <activity android:name=".UILoginActivity" />
+        <activity android:name=".ProgressBarActivity" />
+        <activity android:name=".ButtonActivity" />
+        <activity android:name=".ImageViewActivity" />
+        <activity android:name=".EditTextActivity" />
         <activity android:name=".TextActivity" />
-        <activity android:name=".ButtonActivity">
+        <activity android:name=".LayoutActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

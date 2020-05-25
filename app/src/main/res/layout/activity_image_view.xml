@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ImageViewActivity">
+
+
+    <!--
+    图片分为前景图片和背景图片
+    ImageView 的 android:src 属于前景图片， 前景图片不会被拉伸
+    背景图片android:background 会随着你的大小背景图片跟这放大和缩小
+    -->
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_house"
+        android:layout_gravity="center"
+        android:background="@mipmap/ic_house"
+        >
+    </ImageView>
+
+    <!--
+    按钮图片，这种按钮图片，是不能在图片上设置文字的，只能放置src图片
+    -->
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/bluetooth"></ImageButton>
+</LinearLayout>

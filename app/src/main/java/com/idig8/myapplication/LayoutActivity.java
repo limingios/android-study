@@ -19,4 +19,10 @@ public class LayoutActivity extends AppCompatActivity {
         startActivity(intent);
         LayoutActivity.this.finish();
     }
+
+    public void toTableActivity(View v){
+        Intent intent = new Intent(LayoutActivity.this,TableActivity.class);
+        startActivity(intent);
+        LayoutActivity.this.finish();
+    }
 }

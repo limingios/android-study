@@ -19,7 +19,8 @@
         android:id="@+id/btn2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="表格布局"></Button>
+        android:text="表格布局"
+        android:onClick="toTableActivity"></Button>
 
     <Button
         android:id="@+id/btn3"

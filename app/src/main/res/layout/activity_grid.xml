@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:rowCount="5"
+    android:columnCount="4"
+    tools:context=".GridActivity">
+
+    <!--
+     android:rowCount="5"  行数
+     android:columnCount="4"  列数
+     android:layout_columnSpan 合并列
+     android:layout_rowSpan   合并行
+    -->
+    <EditText android:layout_columnSpan="4" android:layout_gravity="fill"></EditText>
+    <Button android:text="1"></Button>
+    <Button android:text="2"></Button>
+    <Button android:text="3"></Button>
+    <Button android:text="/"></Button>
+    <Button android:text="4"></Button>
+    <Button android:text="5"></Button>
+    <Button android:text="6"></Button>
+    <Button android:text="*"></Button>
+    <Button android:text="7"></Button>
+    <Button android:text="8"></Button>
+    <Button android:text="9"></Button>
+    <Button android:text="-"></Button>
+    <Button android:text="0" android:layout_columnSpan="2" android:layout_gravity="fill"></Button>
+    <Button android:text="."></Button>
+    <Button android:text="+" android:layout_rowSpan="2" android:layout_gravity="fill"></Button>
+    <Button android:text="=" android:layout_columnSpan="3" android:layout_gravity="fill"></Button>
+
+</GridLayout>

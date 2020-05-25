@@ -25,4 +25,10 @@ public class LayoutActivity extends AppCompatActivity {
         startActivity(intent);
         LayoutActivity.this.finish();
     }
+
+    public void toGridActivity(View v){
+        Intent intent = new Intent(LayoutActivity.this,GridActivity.class);
+        startActivity(intent);
+        LayoutActivity.this.finish();
+    }
 }

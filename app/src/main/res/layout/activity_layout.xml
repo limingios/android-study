@@ -26,6 +26,6 @@
         android:id="@+id/btn3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="网格布局"></Button>
+        android:text="网格布局" android:onClick="toGridActivity"></Button>
 
 </LinearLayout>

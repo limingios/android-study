@@ -28,4 +28,10 @@
         android:layout_height="wrap_content"
         android:text="网格布局" android:onClick="toGridActivity"></Button>
 
+
+    <Button
+        android:id="@+id/buttonUI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button演示" android:onClick="toButtonActivity"></Button>
 </LinearLayout>

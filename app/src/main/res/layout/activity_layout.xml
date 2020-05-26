@@ -28,6 +28,12 @@
         android:layout_height="wrap_content"
         android:text="网格布局" android:onClick="toGridActivity"></Button>
 
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="相对布局" android:onClick="toConstraintActivity"></Button>
+
 
     <Button
         android:id="@+id/buttonUI"

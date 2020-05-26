@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UiMenuActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#B9B9FF"
+        android:gravity="center"
+        android:text="@string/ui_title"
+        android:textColor="#8A2BE2"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:typeface="monospace" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名："></TextView>
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入姓名"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性别："></TextView>
+
+            <RadioGroup
+                android:id="@+id/sexRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/maleRadioButton"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="男"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/femaleRadioButton"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="女"></RadioButton>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="喜好："></TextView>
+
+            <CheckBox
+                android:id="@+id/hotCheckBox"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="辣">
+
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/fishCheckBox"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="海鲜">
+
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/sourCheckBox"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="酸">
+
+            </CheckBox>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预算："></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0元">
+
+            </TextView>
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:max="100"></SeekBar>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100元">
+
+            </TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/searchButton"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textSize="22sp"
+                android:text="寻找菜品"></Button>
+
+            <ImageView
+                android:id="@+id/foodImageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+            </ImageView>
+
+            <ToggleButton
+                android:id="@+id/showToggleButton"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textSize="22sp"
+                android:textOff="下一个"
+                android:textOn="显示菜单"></ToggleButton>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

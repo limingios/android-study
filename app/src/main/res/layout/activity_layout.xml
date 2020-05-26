@@ -36,8 +36,14 @@
 
 
     <Button
-        android:id="@+id/buttonUI"
+    android:id="@+id/buttonUI"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Button演示" android:onClick="toButtonActivity"></Button>
+
+    <Button
+        android:id="@+id/menuUI"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button演示" android:onClick="toButtonActivity"></Button>
+        android:text="点菜UI" android:onClick="toMenuActivity"></Button>
 </LinearLayout>

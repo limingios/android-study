@@ -7,6 +7,7 @@ import android.util.Log;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.RadioGroup;
+import android.widget.SeekBar;
 import android.widget.ToggleButton;
 
 public class CheckButtonActivity extends AppCompatActivity {
@@ -41,5 +42,24 @@ public class CheckButtonActivity extends AppCompatActivity {
         });
 
 
+        SeekBar seekBar = findViewById(R.id.seekBar);
+        seekBar.setProgress(50);
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                Log.d(TAG,"onProgressChanged = "+ progress);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+                Log.d(TAG,"onStartTrackingTouch = "+ seekBar.getProgress());
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                Log.d(TAG,"onStopTrackingTouch = "+ seekBar.getProgress());
+
+            }
+        });
     }
 }

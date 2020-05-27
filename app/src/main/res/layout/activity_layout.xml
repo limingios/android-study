@@ -46,4 +46,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="点菜UI" android:onClick="toMenuActivity"></Button>
+
+
+    <Button
+        android:id="@+id/getpostUI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="网络请求" android:onClick="toGetPostActivity"></Button>
 </LinearLayout>

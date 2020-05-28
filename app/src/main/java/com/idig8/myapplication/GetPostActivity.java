@@ -20,6 +20,7 @@ public class GetPostActivity extends AppCompatActivity {
     private Button buttonFormatData;
     private TextView textViewData;
     private String result;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +37,7 @@ public class GetPostActivity extends AppCompatActivity {
     }
 
 
-    public void getNetData(View w){
+    public void getNetDataMethod(View v){
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -58,6 +59,7 @@ public class GetPostActivity extends AppCompatActivity {
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
+                                result = decode(result);
                                 textViewData.setText(result);
                             }
                         });
@@ -69,7 +71,7 @@ public class GetPostActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
             }
-        });
+        }).start();
 
     }
 
@@ -92,6 +94,32 @@ public class GetPostActivity extends AppCompatActivity {
         return result.toString("UTF-8");
     }
 
-
+    public static String decode(String unicodeStr){
+        if (unicodeStr == null){
+            return null;
+        }
+        StringBuilder retBud = new StringBuilder();
+        int maxLoop = unicodeStr.length();
+        for(int i = 0;i < maxLoop;i++){
+            if (unicodeStr.charAt(i) == '\\') {
+            if ((i < maxLoop - 5) &&
+                    ((unicodeStr.charAt(i + 1) == 'u') || (
+                            unicodeStr.charAt(i + 1) == 'U'
+                    )))
+                try {
+                    retBud.append(Integer.parseInt(unicodeStr.substring(i + 2, i + 6),16));
+                    i += 5;
+                } catch (NumberFormatException l) {
+                    retBud.append(unicodeStr.charAt(i));
+                }
+            else {
+                retBud.append(unicodeStr.charAt(i));
+            }
+        }else {
+            retBud.append(unicodeStr.charAt(i));
+        }
+    }
+    return retBud.toString();
+}
 
 }

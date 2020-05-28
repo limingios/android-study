@@ -55,11 +55,12 @@
         android:id="@+id/getpostUI"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="网络请求" android:onClick="toGetPostActivity"></Button>
+        android:text="handler的方式下载更新进度条" android:onClick="toDownHandlerActivity"></Button>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="代码实现最简单Handler" android:onClick="toHandlerEmptyMessageActivity"></Button>
+
+
+
     </LinearLayout>
+
+
 </ScrollView>

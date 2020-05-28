@@ -56,4 +56,10 @@ public class LayoutActivity extends AppCompatActivity {
         startActivity(intent);
         LayoutActivity.this.finish();
     }
+
+    public void toHandlerEmptyMessageActivity(View v) {
+        Intent intent = new Intent(LayoutActivity.this, HandlerToEmptyMessageActivity.class);
+        startActivity(intent);
+        LayoutActivity.this.finish();
+    }
 }

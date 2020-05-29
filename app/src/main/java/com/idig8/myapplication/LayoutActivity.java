@@ -74,4 +74,10 @@ public class LayoutActivity extends AppCompatActivity {
         startActivity(intent);
         LayoutActivity.this.finish();
     }
+
+    public void toDiglettActivity(View v){
+        Intent intent = new Intent(LayoutActivity.this, DiglettActivity.class);
+        startActivity(intent);
+        LayoutActivity.this.finish();
+    }
 }

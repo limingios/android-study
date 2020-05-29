@@ -6,6 +6,7 @@ import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
@@ -30,6 +31,7 @@ public class DownHandlerActivity extends AppCompatActivity {
     private static final int DOWNLOAD_MESSAGE_FAIL_CODE = 100002;
     public static final int EXTERNAL_STORAGE_REQ_CODE = 10 ;
     private  Handler handler;
+    private static final String TAG = "DownHandlerActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,7 +61,8 @@ public class DownHandlerActivity extends AppCompatActivity {
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
-                        download("https://g17.gdl.netease.com/com.netease.dhxy_simple.1.1.235.apk");
+                        download("https://4dac61970a9d2ea67927f952ca528296.dlied1.cdntips.com/dlied1.qq.com/qqweb/QQ_1/android_apk/Android_8.3.6.4590_537064458.apk?mkey=5ed07cb6b677a558&f=17c9&cip=182.119.131.173&proto=https&access_type=$header_ApolloNet");
+//                        download("https://g17.gdl.netease.com/com.netease.dhxy_simple.1.1.235.apk");
                     }
                 }).start();
 
@@ -69,7 +72,9 @@ public class DownHandlerActivity extends AppCompatActivity {
             @Override
             public void handleMessage(@NonNull Message msg) {
                 if(msg.what==DOWNLOAD_MESSAGE_CODE){
-                    progressBar.setProgress((Integer) msg.obj);
+
+                    Log.d(TAG,"Handler="+(Long) msg.obj);
+                    progressBar.setProgress(((Long) msg.obj).intValue());
                 }
                 if(msg.what==DOWNLOAD_MESSAGE_FAIL_CODE){
                    //下载失败的控制
@@ -85,7 +90,9 @@ public class DownHandlerActivity extends AppCompatActivity {
             InputStream inputStream = urlConnection.getInputStream();
             // 获取文件的总长度
             int contentLength = urlConnection.getContentLength();
-            String downloadFolderName = Environment.getExternalStorageState()+ File.separator+
+//            String downloadFolderName = Environment.getDownloadCacheDirectory()+ File.separator+
+//                    "dh2"+File.separator;
+            String downloadFolderName = getApplicationContext().getFilesDir().getAbsolutePath()+ File.separator+
                     "dh2"+File.separator;
             File file = new File(downloadFolderName);
             if(!file.exists()){
@@ -105,7 +112,10 @@ public class DownHandlerActivity extends AppCompatActivity {
                 outputStream.write(bytes,0,length);
                 downSize+=length;
                 Message message = Message.obtain();
-                message.obj = downSize* 100/contentLength;
+                long downSizelong=(long)downSize*100;
+                long resultObj = downSizelong/contentLength;
+                Log.d(TAG,"Handler+downSize="+ downSize+":"+contentLength+":"+resultObj);
+                message.obj = resultObj;
                 message.what=DOWNLOAD_MESSAGE_CODE;
                 handler.sendMessage(message);
             }

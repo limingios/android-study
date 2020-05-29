@@ -68,4 +68,10 @@ public class LayoutActivity extends AppCompatActivity {
         startActivity(intent);
         LayoutActivity.this.finish();
     }
+
+    public void toCountHandlerActivity(View v) {
+        Intent intent = new Intent(LayoutActivity.this, HandlerWeakActivity.class);
+        startActivity(intent);
+        LayoutActivity.this.finish();
+    }
 }

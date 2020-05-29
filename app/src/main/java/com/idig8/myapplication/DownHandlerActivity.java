@@ -114,7 +114,6 @@ public class DownHandlerActivity extends AppCompatActivity {
                 Message message = Message.obtain();
                 long downSizelong=(long)downSize*100;
                 long resultObj = downSizelong/contentLength;
-                Log.d(TAG,"Handler+downSize="+ downSize+":"+contentLength+":"+resultObj);
                 message.obj = resultObj;
                 message.what=DOWNLOAD_MESSAGE_CODE;
                 handler.sendMessage(message);

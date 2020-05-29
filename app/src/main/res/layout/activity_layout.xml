@@ -57,8 +57,10 @@
         android:layout_height="wrap_content"
         android:text="handler的方式下载更新进度条" android:onClick="toDownHandlerActivity"></Button>
 
-
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="弱引用handler完成倒計時" android:onClick="toCountHandlerActivity"></Button>
 
     </LinearLayout>
 

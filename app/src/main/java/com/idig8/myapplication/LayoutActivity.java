@@ -80,4 +80,10 @@ public class LayoutActivity extends AppCompatActivity {
         startActivity(intent);
         LayoutActivity.this.finish();
     }
+
+    public void toAsyncTaskActivity(View v){
+        Intent intent = new Intent(LayoutActivity.this, AsyncTaskActivity.class);
+        startActivity(intent);
+        LayoutActivity.this.finish();
+    }
 }

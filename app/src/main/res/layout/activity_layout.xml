@@ -68,6 +68,12 @@
         android:layout_height="wrap_content"
         android:text="打地鼠" android:onClick="toDiglettActivity"></Button>
 
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AsyncTask" android:onClick="toAsyncTaskActivity"></Button>
+
     </LinearLayout>
 
 

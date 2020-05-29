@@ -35,6 +35,28 @@ public class AsyncTaskActivity extends AppCompatActivity {
 
         //初始化UI数据
         setData();
+
+        /*DownloadHelper.download(APK_URL, "", new DownloadHelper.OnDownloadListener.SimpleDownloadListener() {
+            @Override
+            public void onSuccess(int code, File file) {
+
+            }
+
+            @Override
+            public void onFail(int code, File file, String message) {
+
+            }
+
+            @Override
+            public void onStart() {
+                super.onStart();
+            }
+
+            @Override
+            public void onProgress(int progress) {
+                super.onProgress(progress);
+            }
+        });*/
     }
 
     private void setData() {

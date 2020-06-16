@@ -86,4 +86,10 @@ public class LayoutActivity extends AppCompatActivity {
         startActivity(intent);
         LayoutActivity.this.finish();
     }
+
+    public void toOptionMenuActivity(View v){
+        Intent intent = new Intent(LayoutActivity.this, OptionMenuActivity.class);
+        startActivity(intent);
+        LayoutActivity.this.finish();
+    }
 }

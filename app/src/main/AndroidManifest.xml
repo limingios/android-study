@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AsyncTaskActivity"></activity>
+        <activity android:name=".OptionMenuActivity"></activity>
+        <activity android:name=".AsyncTaskActivity" />
         <activity android:name=".DiglettActivity" />
         <activity android:name=".HandlerWeakActivity" />
         <activity android:name=".DownHandlerActivity" />

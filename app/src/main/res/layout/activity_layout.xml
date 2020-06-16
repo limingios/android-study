@@ -74,6 +74,11 @@
         android:layout_height="wrap_content"
         android:text="AsyncTask" android:onClick="toAsyncTaskActivity"></Button>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="顶部菜单" android:onClick="toOptionMenuActivity"></Button>
+
     </LinearLayout>
 
 

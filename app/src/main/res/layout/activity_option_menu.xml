@@ -11,4 +11,9 @@
     android:layout_height="wrap_content"
     android:text="测试context"
     android:id="@+id/contentBtn"></Button>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="自定义Dialog"
+    android:id="@+id/popupMenu"></Button>
 </LinearLayout>

@@ -92,4 +92,10 @@ public class LayoutActivity extends AppCompatActivity {
         startActivity(intent);
         LayoutActivity.this.finish();
     }
+
+    public void toDialogActivity(View v){
+        Intent intent = new Intent(LayoutActivity.this, DialogActivity.class);
+        startActivity(intent);
+        LayoutActivity.this.finish();
+    }
 }

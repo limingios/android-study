@@ -79,6 +79,10 @@
         android:layout_height="wrap_content"
         android:text="顶部菜单" android:onClick="toOptionMenuActivity"></Button>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="对话框" android:onClick="toDialogActivity"></Button>
     </LinearLayout>
 
 

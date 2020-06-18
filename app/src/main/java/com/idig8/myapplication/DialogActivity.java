@@ -28,7 +28,12 @@ public class DialogActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dialog);
 
         if(getIntent()!=null){
-            Log.d("DialogActivity",getIntent().getStringExtra("aaa"));
+            Log.d("DialogActivity",getIntent().getStringExtra("abc"));
+            Bundle bundle  = getIntent().getBundleExtra("ccc");
+            Log.d("DialogActivity",bundle.getString("aaa"));
+
+            User u = (User)getIntent().getSerializableExtra("ddd");
+            Log.d("DialogActivity",u.getUsername());
         }
 
     }

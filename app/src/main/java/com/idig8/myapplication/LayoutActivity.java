@@ -96,6 +96,14 @@ public class LayoutActivity extends AppCompatActivity {
     public void toDialogActivity(View v){
         Intent intent = new Intent(LayoutActivity.this, DialogActivity.class);
         intent.putExtra("abc","aaaa");
+
+        Bundle bundle = new Bundle();
+        bundle.putString("aaa", "bbb");
+        intent.putExtra("ccc", bundle);
+        User u = new User();
+        u.setUsername("liming");
+        u.setPassword("123456");
+        intent.putExtra("ddd", u);
         startActivity(intent);
         LayoutActivity.this.finish();
     }

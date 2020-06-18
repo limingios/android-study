@@ -95,6 +95,7 @@ public class LayoutActivity extends AppCompatActivity {
 
     public void toDialogActivity(View v){
         Intent intent = new Intent(LayoutActivity.this, DialogActivity.class);
+        intent.putExtra("abc","aaaa");
         startActivity(intent);
         LayoutActivity.this.finish();
     }

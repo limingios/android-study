@@ -27,6 +27,13 @@ tools:context=".DialogActivity">
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="自定义popupWindow"
-        android:id="@+id/shwoPopupWindowBtn" android:onClick="clickshowPopupWindowBtn"></Button>
+        android:id="@+id/showPopupWindowBtn" android:onClick="clickshowPopupWindowBtn"></Button>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="数据适配器对话框"
+        android:id="@+id/showDataDialogBtn" android:onClick="clickshowDataDialogBtnBtn"></Button>
 
 </LinearLayout>

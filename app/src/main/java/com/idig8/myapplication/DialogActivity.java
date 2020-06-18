@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.content.DialogInterface;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -12,8 +13,10 @@ import android.graphics.ColorFilter;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.PopupWindow;
 import android.widget.Toast;
 
@@ -23,6 +26,11 @@ public class DialogActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dialog);
+
+        if(getIntent()!=null){
+            Log.d("DialogActivity",getIntent().getStringExtra("aaa"));
+        }
+
     }
 
     public void clickShowmyAlertDialogBtn(View v){
@@ -131,5 +139,26 @@ public class DialogActivity extends AppCompatActivity {
 
 
 
+    public void clickshowDataDialogBtnBtn(View v){
+        final String[] items = {"Java","Mysql","Android","HTML","C","JavaScript"};
+        //数组适配器
+        //参数1：环境
+        //参数2：布局资源索引，指的是每一项数据所呈现的样式android.R.layout.xxx
+        //参数3：数据源
+//       ArrayAdapter adapter = new ArrayAdapter(this,android.R.layout.simple_dropdown_item_1line,items);
+     ArrayAdapter adapter = new ArrayAdapter(this,R.layout.array_item_layout,R.id.item_txt,items);
+       AlertDialog.Builder builder = new AlertDialog.Builder(this)
+                .setTitle("请选择")
+                //参数1：适配器对象（对数据显示样式的规则制定器）
+                //参数2：监听器
+                .setAdapter(adapter, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(DialogActivity.this,items[i],Toast.LENGTH_SHORT).show();
+                        dialogInterface.dismiss();
+                    }
+                });
+        builder.show();
+    }
 
 }

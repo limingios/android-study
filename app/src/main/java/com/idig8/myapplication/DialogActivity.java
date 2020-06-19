@@ -69,6 +69,7 @@ public class DialogActivity extends AppCompatActivity {
         dialog.setButton(DialogInterface.BUTTON_POSITIVE, "确定", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
+                setResult(123);
                 finish();
             }
         });

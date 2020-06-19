@@ -107,15 +107,15 @@ public class LayoutActivity extends AppCompatActivity {
         intent.putExtra("ddd", u);
         startActivity(intent);
         // 如果需要回调的话，可以通过下面的方式
-        startActivityForResult(intent,9999) ;
-        LayoutActivity.this.finish();
+//        startActivityForResult(intent,9999) ;
+
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode==9999 && resultCode ==123){
-            setTitle("前一个页面回来了          ");
+            setTitle("前一个页面回来了");
         }
     }
 }

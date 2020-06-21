@@ -12,7 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class FragmentActivity extends AppCompatActivity {
+public class FragmentActivity extends AppCompatActivity implements ListFragment.OnTitleClickLister {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class FragmentActivity extends AppCompatActivity {
         });
 
 
-        ListFragment listFragment = new ListFragment();
+        ListFragment listFragment = ListFragment.getInstance("list");
 
         // 同一个listFragment 只能被用一次。
 
@@ -37,17 +37,23 @@ public class FragmentActivity extends AppCompatActivity {
                 .add(R.id.listContainer,listFragment)
                 .commit();
 
+        listFragment.setmOnTitleClickLister(this);
+
         getSupportFragmentManager()
                 .beginTransaction()
                 .add(R.id.detailContainer,new ListFragment())
                 .commit();
 
 
-        getSupportFragmentManager()
-                .beginTransaction()
-                .remove(listFragment)
-                .commit();
+//        getSupportFragmentManager()
+//                .beginTransaction()
+//                .remove(listFragment)
+//                .commit();
     }
 
 
+    @Override
+    public void onClick(String clickTitle) {
+        setTitle(clickTitle);
+    }
 }

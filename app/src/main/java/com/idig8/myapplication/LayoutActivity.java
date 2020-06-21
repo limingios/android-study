@@ -118,4 +118,14 @@ public class LayoutActivity extends AppCompatActivity {
             setTitle("前一个页面回来了");
         }
     }
+
+
+
+
+
+    public void toFragmentActivity(View v){
+        Intent intent = new Intent(LayoutActivity.this, FragmentActivity.class);
+        startActivity(intent);
+        LayoutActivity.this.finish();
+    }
 }

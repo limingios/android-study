@@ -83,6 +83,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="对话框" android:onClick="toDialogActivity"></Button>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment演示" android:onClick="toFragmentActivity"></Button>
     </LinearLayout>
 
 

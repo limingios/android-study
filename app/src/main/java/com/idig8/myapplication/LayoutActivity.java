@@ -128,4 +128,11 @@ public class LayoutActivity extends AppCompatActivity {
         startActivity(intent);
         LayoutActivity.this.finish();
     }
+
+
+    public void toViewPagerActivity(View v){
+        Intent intent = new Intent(LayoutActivity.this, ViewPagerActivity.class);
+        startActivity(intent);
+        LayoutActivity.this.finish();
+    }
 }

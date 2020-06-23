@@ -142,4 +142,10 @@ public class LayoutActivity extends AppCompatActivity {
         startActivity(intent);
         LayoutActivity.this.finish();
     }
+
+    public void toViewPagerTabActivity(View v){
+        Intent intent = new Intent(LayoutActivity.this, TabHostActivity.class);
+        startActivity(intent);
+        LayoutActivity.this.finish();
+    }
 }

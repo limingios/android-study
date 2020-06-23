@@ -4,4 +4,7 @@
     </string>
     <string name="ui_title">开始选餐</string>
     <string name="begin_game">点击开始</string>
+    <string name="home">首页</string>
+    <string name="message">消息</string>
+    <string name="me">我的</string>
 </resources>

@@ -136,6 +136,19 @@ public class LayoutActivity extends AppCompatActivity {
         LayoutActivity.this.finish();
     }
 
+
+    public void toViewPagerFragmentActivity(View v){
+        Intent intent = new Intent(LayoutActivity.this, TabViewPagerActivity.class);
+        startActivity(intent);
+        LayoutActivity.this.finish();
+    }
+
+    public void toViewPagerTabActivity(View v){
+        Intent intent = new Intent(LayoutActivity.this, TabHostActivity.class);
+        startActivity(intent);
+        LayoutActivity.this.finish();
+    }
+
     public void  toFullActivity(View v){
         Intent intent = new Intent(LayoutActivity.this, FullActivity.class);
         startActivity(intent);

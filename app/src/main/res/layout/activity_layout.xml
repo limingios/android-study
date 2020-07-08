@@ -101,6 +101,16 @@
         android:layout_height="wrap_content"
         android:text="界面综合演示淘旅游" android:onClick="toFullActivity"></Button>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ViewPagerFragmet演示" android:onClick="toViewPagerFragmentActivity"></Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tab演示" android:onClick="toViewPagerTabActivity"></Button>
+
     </LinearLayout>
 
 

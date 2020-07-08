@@ -96,10 +96,6 @@
         android:layout_height="wrap_content"
         android:text="ViewPager演示" android:onClick="toViewPagerActivity"></Button>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="界面综合演示淘旅游" android:onClick="toFullActivity"></Button>
 
     <Button
         android:layout_width="match_parent"
@@ -110,6 +106,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="tab演示" android:onClick="toViewPagerTabActivity"></Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="界面综合演示淘旅游" android:onClick="toFullActivity"></Button>
 
     </LinearLayout>
 

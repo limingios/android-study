@@ -7,4 +7,15 @@
     <string name="home">首页</string>
     <string name="message">消息</string>
     <string name="me">我的</string>
+
+    <string-array name="main_menu">
+        <item>飞机票</item>
+        <item>住酒店</item>
+        <item>去旅游</item>
+        <item>周边游</item>
+        <item>买门票</item>
+        <item>火车票</item>
+        <item>汽车票</item>
+        <item>领里程</item>
+    </string-array>
 </resources>

@@ -89,14 +89,406 @@
                     android:text="购物车"
                     >
                 </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="78dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@mipmap/list_my_menu"
+                    android:layout_marginLeft="10dp"
+                    ></ImageView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/txt_my_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的订单"
+                        android:paddingTop="10dp"
+                        android:textColor="#000000"
+                        android:textSize="24sp">
+
+                    </TextView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#D8DDE1"
+                        android:layout_below="@+id/txt_my_menu"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        ></View>
+
+                </RelativeLayout>
+
 
             </LinearLayout>
 
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@mipmap/list_save"
+                    android:layout_marginLeft="10dp"
+                    ></ImageView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/txt_my_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的收藏"
+                        android:paddingTop="10dp"
+                        android:textColor="#000000"
+                        android:textSize="24sp">
+
+                    </TextView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#D8DDE1"
+                        android:layout_below="@+id/txt_my_save"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        ></View>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@mipmap/list_pwd"
+                    android:layout_marginLeft="10dp"
+                    ></ImageView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/txt_my_pwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的口令"
+                        android:paddingTop="10dp"
+                        android:textColor="#000000"
+                        android:textSize="24sp">
+
+                    </TextView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#D8DDE1"
+                        android:layout_below="@+id/txt_my_pwd"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        ></View>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@mipmap/list_my"
+                    android:layout_marginLeft="10dp"
+                    ></ImageView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/txt_my"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的锦囊"
+                        android:paddingTop="10dp"
+                        android:textColor="#000000"
+                        android:textSize="24sp">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#D8DDE1"
+                android:layout_below="@+id/txt_my"
+                android:layout_marginTop="10dp"
+                ></View>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@mipmap/list_safe_center"
+                    android:layout_marginLeft="10dp"
+                    ></ImageView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/txt_my_safe_center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="安全中心"
+                        android:paddingTop="10dp"
+                        android:textColor="#000000"
+                        android:textSize="24sp">
+
+                    </TextView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#D8DDE1"
+                        android:layout_below="@+id/txt_my_safe_center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        ></View>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@mipmap/list_address"
+                    android:layout_marginLeft="10dp"
+                    ></ImageView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/txt_my_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="常用地址"
+                        android:paddingTop="10dp"
+                        android:textColor="#000000"
+                        android:textSize="24sp">
+
+                    </TextView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#D8DDE1"
+                        android:layout_below="@+id/txt_my_address"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        ></View>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@mipmap/list_service"
+                    android:layout_marginLeft="10dp"
+                    ></ImageView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/txt_my_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="客服中心"
+                        android:paddingTop="10dp"
+                        android:textColor="#000000"
+                        android:textSize="24sp">
+
+                    </TextView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#D8DDE1"
+                        android:layout_below="@+id/txt_my_service"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        ></View>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@mipmap/list_sug"
+                    android:layout_marginLeft="10dp"
+                    ></ImageView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/txt_my_sug"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="意见反馈"
+                        android:paddingTop="10dp"
+                        android:textColor="#000000"
+                        android:textSize="24sp">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#D8DDE1"
+                android:layout_below="@+id/txt_my_sug"
+                android:layout_marginTop="10dp"
+                ></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@mipmap/list_setting"
+                    android:layout_marginLeft="10dp"
+                    ></ImageView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/txt_my_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="个人设置"
+                        android:paddingTop="10dp"
+                        android:textColor="#000000"
+                        android:textSize="24sp">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
         </LinearLayout>
 
+    </ScrollView>
 
-    </RelativeLayout>
+
 
 
 </LinearLayout>

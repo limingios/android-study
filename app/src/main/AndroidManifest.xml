@@ -14,10 +14,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TabHostActivity"></activity>
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".TabHostActivity" />
         <activity android:name=".TabViewPagerActivity" />
         <activity android:name=".ViewPagerActivity" />
-        <activity android:name=".Main2Activity"></activity>
+        <activity android:name=".Main2Activity" />
         <activity android:name=".FullActivity" />
         <activity android:name=".ViewPagerActivity" />
         <activity android:name=".FragmentActivity" />

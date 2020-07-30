@@ -123,14 +123,24 @@ public class AppListActivity extends AppCompatActivity {
 
         @Override
         public View getView(final int position, View convertView, ViewGroup parent) {
-            LayoutInflater layoutInflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = layoutInflater.inflate(R.layout.item_app_list_view,null);
 
-            if(convertView!=null) {
-                ImageView appIconImageView = convertView.findViewById(R.id.app_icon_image_view);
-                TextView appTextView = convertView.findViewById(R.id.app_name_text_view);
-                appTextView.setText(mAppInfos.get(position).activityInfo.loadLabel(getPackageManager()));
-                appIconImageView.setImageDrawable(mAppInfos.get(position).activityInfo.loadIcon(getPackageManager()));
+
+            ViewHolder viewHolder = new ViewHolder();
+            if(convertView==null) {
+                LayoutInflater layoutInflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                convertView = layoutInflater.inflate(R.layout.item_app_list_view,null);
+                viewHolder.mAppIconImageView = convertView.findViewById(R.id.app_icon_image_view);
+                viewHolder.mAppTextView = convertView.findViewById(R.id.app_name_text_view);
+
+                convertView.setTag(viewHolder);
+            }else{
+                viewHolder = (ViewHolder)convertView.getTag();
+            }
+
+            viewHolder.mAppTextView.setText(mAppInfos.get(position).activityInfo.loadLabel(getPackageManager()));
+            viewHolder.mAppIconImageView.setImageDrawable(mAppInfos.get(position).activityInfo.loadIcon(getPackageManager()));
+
+
                 convertView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -142,8 +152,13 @@ public class AppListActivity extends AppCompatActivity {
                         startActivity(intent);
                     }
                 });
-            }
+
             return convertView;
+        }
+
+        public class ViewHolder {
+            public ImageView mAppIconImageView;
+            public TextView mAppTextView;
         }
     }
 }

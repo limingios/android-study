@@ -154,4 +154,10 @@ public class LayoutActivity extends AppCompatActivity {
         startActivity(intent);
         LayoutActivity.this.finish();
     }
+
+    public void toAppListActivity(View v){
+        Intent intent = new Intent(LayoutActivity.this, AppListActivity.class);
+        startActivity(intent);
+        LayoutActivity.this.finish();
+    }
 }

@@ -4,6 +4,7 @@ import java.util.List;
 
 public class LessonResult {
     private int status;
+    private String msg;
     private List<Lesson> mLessons;
 
     public int getStatus() {
@@ -20,6 +21,14 @@ public class LessonResult {
 
     public void setmLessons(List<Lesson> mLessons) {
         this.mLessons = mLessons;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
     }
 
     @Override

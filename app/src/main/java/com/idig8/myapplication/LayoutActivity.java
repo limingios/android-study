@@ -160,4 +160,10 @@ public class LayoutActivity extends AppCompatActivity {
         startActivity(intent);
         LayoutActivity.this.finish();
     }
+
+    public void toRequestToDataActivity(View v){
+        Intent intent = new Intent(LayoutActivity.this, RequestDataActivity.class);
+        startActivity(intent);
+        LayoutActivity.this.finish();
+    }
 }

@@ -7,6 +7,7 @@
     <string name="home">首页</string>
     <string name="message">消息</string>
     <string name="me">我的</string>
+    <string name="xiaoming">小明</string>
 
     <string-array name="main_menu">
         <item>飞机票</item>

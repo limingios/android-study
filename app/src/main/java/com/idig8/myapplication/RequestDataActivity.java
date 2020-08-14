@@ -2,10 +2,16 @@ package com.idig8.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
+import com.idig8.myapplication.adapter.RequestDataAdapter;
 import com.idig8.myapplication.model.LessonInfo;
 import com.idig8.myapplication.model.LessonResult;
 
@@ -24,14 +30,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RequestDataActivity extends AppCompatActivity {
+    ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_request_data);
 
-        ListView listView = findViewById(R.id.request_main_list_view);
-        listView.setAdapter();
+         listView = findViewById(R.id.request_main_list_view);
+
+        LayoutInflater layoutInflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View headerView = layoutInflater.inflate(R.layout.header_list,null);
+
+        listView.addFooterView(headerView);
+
+         new RequestDataAsyncTask().execute();
+
     }
 
     public class RequestDataAsyncTask extends AsyncTask<Void,Void,String>{
@@ -64,6 +78,8 @@ public class RequestDataActivity extends AppCompatActivity {
                 }
                 lessonResult.setmLessons(lessonInfos);
 
+                listView.setAdapter(new RequestDataAdapter(RequestDataActivity.this,lessonInfos));
+
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -95,12 +111,16 @@ public class RequestDataActivity extends AppCompatActivity {
                     }
                     return stringBuffer.toString();
                 }
+                return null;
 
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            return null;
+
         }
     }
+
 }

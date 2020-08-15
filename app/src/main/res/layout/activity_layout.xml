@@ -126,6 +126,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="聊天View" android:onClick="toChatActivity"></Button>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="cardView列表" android:onClick="toCardActivity"></Button>
+
     </LinearLayout>
 
 

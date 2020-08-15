@@ -173,5 +173,11 @@ public class LayoutActivity extends AppCompatActivity {
         LayoutActivity.this.finish();
     }
 
+    public void toCardActivity(View v){
+        Intent intent = new Intent(LayoutActivity.this, CardViewActivity.class);
+        startActivity(intent);
+        LayoutActivity.this.finish();
+    }
+
 
 }

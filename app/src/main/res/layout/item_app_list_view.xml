@@ -15,5 +15,6 @@
         android:gravity="center"
         android:paddingLeft="6dp"
         android:textSize="20sp"
+        android:singleLine="true"
         android:text="@string/app_name"></TextView>
 </LinearLayout>

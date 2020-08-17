@@ -166,4 +166,18 @@ public class LayoutActivity extends AppCompatActivity {
         startActivity(intent);
         LayoutActivity.this.finish();
     }
+
+    public void toChatActivity(View v){
+        Intent intent = new Intent(LayoutActivity.this, ChatActivity.class);
+        startActivity(intent);
+        LayoutActivity.this.finish();
+    }
+
+    public void toCardActivity(View v){
+        Intent intent = new Intent(LayoutActivity.this, CardViewActivity.class);
+        startActivity(intent);
+        LayoutActivity.this.finish();
+    }
+
+
 }

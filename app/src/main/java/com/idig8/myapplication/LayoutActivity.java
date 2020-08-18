@@ -179,5 +179,16 @@ public class LayoutActivity extends AppCompatActivity {
         LayoutActivity.this.finish();
     }
 
+    public void toSharePreferenceActivity(View v){
+        Intent intent = new Intent(LayoutActivity.this, SharePreferenceActivity.class);
+        startActivity(intent);
+        LayoutActivity.this.finish();
+    }
+
+    public void toInternalActivity(View v){
+        Intent intent = new Intent(LayoutActivity.this, InternalActivity.class);
+        startActivity(intent);
+        LayoutActivity.this.finish();
+    }
 
 }

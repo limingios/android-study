@@ -191,4 +191,10 @@ public class LayoutActivity extends AppCompatActivity {
         LayoutActivity.this.finish();
     }
 
+    public void toDataBaseActivity(View v){
+        Intent intent = new Intent(LayoutActivity.this, DataBaseActivity.class);
+        startActivity(intent);
+        LayoutActivity.this.finish();
+    }
+
 }

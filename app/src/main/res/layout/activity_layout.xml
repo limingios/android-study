@@ -139,10 +139,15 @@
         android:layout_height="wrap_content"
         android:text="sharePreference列表" android:onClick="toSharePreferenceActivity"></Button>
 
-        <Button
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="外部/内部存储" android:onClick="toInternalActivity"></Button>
+
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="外部/内部存储" android:onClick="toInternalActivity"></Button>
+        android:text="数据库存储" android:onClick="toDataBaseActivity"></Button>
 
     </LinearLayout>
 

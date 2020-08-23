@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DataBaseActivity"></activity>
+        <activity android:name=".ExpadableListActivity"></activity>
+        <activity android:name=".DataBaseActivity" />
         <activity android:name=".InternalActivity" />
         <activity android:name=".SharePreferenceActivity" />
         <activity android:name=".CardViewActivity" />

@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.idig8.myapplication.receiver.IdigBroadcaseReceiver;
+
 public class LayoutActivity extends AppCompatActivity {
 
     @Override
@@ -198,6 +200,12 @@ public class LayoutActivity extends AppCompatActivity {
     }
     public void toExpadableListActivity(View v){
         Intent intent = new Intent(LayoutActivity.this, ExpadableListActivity.class);
+        startActivity(intent);
+        LayoutActivity.this.finish();
+    }
+
+    public void toBroadcaseActivity(View v){
+        Intent intent = new Intent(LayoutActivity.this, IdigBroadcaseActivity.class);
         startActivity(intent);
         LayoutActivity.this.finish();
     }

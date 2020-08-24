@@ -14,8 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DataBaseActivity"></activity>
-        <activity android:name=".DataBaseActivity2"></activity>
+        <activity android:name=".IdigBroadcaseActivity"></activity>
+        <activity android:name=".DataBaseActivity" />
+        <activity android:name=".DataBaseActivity2" />
         <activity android:name=".InternalActivity" />
         <activity android:name=".SharePreferenceActivity" />
         <activity android:name=".CardViewActivity" />
@@ -60,7 +61,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity" /> <!-- 静态注册广播接收器 -->
+        <receiver android:name=".receiver.IdigBroadcaseReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.BATTERY_LOW" />
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

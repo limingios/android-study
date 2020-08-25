@@ -210,4 +210,10 @@ public class LayoutActivity extends AppCompatActivity {
         LayoutActivity.this.finish();
     }
 
+    public void toHttpOKActivity(View v){
+        Intent intent = new Intent(LayoutActivity.this, OkHttpActivity.class);
+        startActivity(intent);
+        LayoutActivity.this.finish();
+    }
+
 }

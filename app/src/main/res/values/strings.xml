@@ -9,6 +9,7 @@
     <string name="me">我的</string>
     <string name="xiaoming">小明</string>
 
+
     <string-array name="main_menu">
         <item>飞机票</item>
         <item>住酒店</item>

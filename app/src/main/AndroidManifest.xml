@@ -14,9 +14,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ExpadableListActivity"></activity>
+        <activity android:name=".OkHttpActivity"></activity>
+        <activity android:name=".ExpadableListActivity" />
         <activity android:name=".DataBaseActivity" />
-        <activity android:name=".IdigBroadcaseActivity"></activity>
+        <activity android:name=".IdigBroadcaseActivity" />
         <activity android:name=".DataBaseActivity" />
         <activity android:name=".DataBaseActivity2" />
         <activity android:name=".InternalActivity" />

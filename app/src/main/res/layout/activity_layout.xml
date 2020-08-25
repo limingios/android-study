@@ -158,6 +158,11 @@
         android:layout_height="wrap_content"
         android:text="动静态广播存储" android:onClick="toBroadcaseActivity"></Button>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="okHttp请求" android:onClick="toHttpOKActivity"></Button>
+
     </LinearLayout>
 
 

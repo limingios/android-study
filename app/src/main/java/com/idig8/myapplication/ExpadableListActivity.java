@@ -53,7 +53,7 @@ public class ExpadableListActivity extends AppCompatActivity {
         mChapterBiz.loadDatas(this, new ChapterBiz.CallBack() {
             @Override
             public void loadSuccess(List<Chapter> chapterList) {
-                Log.e("zhy", "loadSuccess  ");
+                Log.e("zhy", "loadSuccess");
 
                 mDatas.clear();
                 mDatas.addAll(chapterList);
